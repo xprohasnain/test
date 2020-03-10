@@ -15,8 +15,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-#make errors look better
-gem 'better_errors', '~> 2.6'
+# #make errors look better
+# gem 'better_errors', '~> 2.6'
 #bulma css
 gem 'bulma-rails', '~> 0.8.0'
 #Simpleform
@@ -56,7 +56,8 @@ group :development do
   #guard
   gem 'guard', '~> 2.16', '>= 2.16.1'
   #Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2' , require:false
+  gem 'better_errors'
 end
 
 group :test do
