@@ -1,18 +1,6 @@
 <h1 class="title">New Post</h1>
 
+<%= render 'form' %>
 <div class="section">
-	<%= simple_form_for @post do |f|%>
-	<div class="field">
-		<div class="control">
-		<%= f.input :title , input_html: {class: 'input'}, wrapper: false , input_label: {class: 'label'} %>
-		</div>
-	</div>
-	<div class="field">
-		<div class="control">
-		<%= f.input :content , input_html: {class: 'textarea'}, wrapper: false , input_label: {class: 'label'} %>
-		</div>
-	</div>
-   <%= f.button :submit , "Create New Post" , class: "button is-primary" %>
-
-	<%end%>
+<%= link_to 'Back', posts_path ,class: "button is-success"%>
 </div>

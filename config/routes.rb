@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :posts
+  resources :posts ,:except => [:create]
+  post '/posts' , to: 'posts#create'
   resources :comments
-  root "comments#index"
+  root "posts#index"
 end
