@@ -10,7 +10,7 @@
 		<%= f.input :content , input_html: {class: 'textarea'}, wrapper: false , input_label: {class: 'label'} %>
 		</div>
 	</div>
-   <%= f.button :submit , class: "button is-primary" %>
+   <%= f.button :submit , class: "button is-primary" %> <%= link_to 'Back', @post ,class: "button is-success"%>
 
 	<%end%>
 </div>
